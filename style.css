@@ -1,0 +1,172 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f4f4f9;
+  line-height: 1.6;
+}
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+/* Header / Hero Section */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  padding: 60px 20px;
+}
+.hero-image {
+  flex: 1 1 250px;
+  max-width: 250px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  border: 3px solid #1abc9c;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.hero-text {
+  flex: 2 1 400px;
+  max-width: 600px;
+}
+.hero-text h1 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  margin-bottom: 20px;
+}
+.hero-text .btn {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.hero-text .btn:hover {
+  background: #1abc9c;
+}
+
+/* Navigation */
+nav {
+  background: #111;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a.active {
+  color: #1abc9c;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+h2 {
+  border-bottom: 2px solid #1abc9c;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1abc9c;
+}
+
+/* Cards */
+.card {
+  background: #2a2a2a;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(26,188,156,0.6);
+}
+
+/* Resume Embed & Text */
+.resume-embed {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #111;
+}
+.resume-text {
+  background: #232323;
+  padding: 20px;
+  border-radius: 8px;
+  color: #e9eef1;
+}
+.resume-text h3 {
+  color: #1abc9c;
+  margin-top: 0;
+}
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.resume-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.small-muted {
+  color: #bfc7c8;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #f4f4f9;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .hero-image {
+    margin-right: 0;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .resume-embed {
+    height: 400px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Kadurla Mohammad Sameer Sohail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header style="text-align: center; padding: 20px; background: #1e1e1e; color: #f4f4f9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;">
+    <h1 style="margin: 0;">Resume</h1>
+    <a href="index.html" class="btn">Back to Portfolio</a>
+  </header>
+
+  <!-- Resume (embedded PDF + HTML text) -->
+  <section id="resume" style="padding: 80px 20px 40px 20px; max-width: 900px; margin: 0 auto; background: #121212; color: #f4f4f9;">
+    <!-- Embedded PDF viewer (requires resume.pdf in same folder) -->
+    <div class="resume-embed" aria-hidden="false">
+      <iframe src="resume.pdf" title="Resume PDF" width="100%" height="100%" style="border:0;">
+        This browser does not support embedded PDFs. Please <a href="resume.pdf" target="_blank">download the resume</a>.
+      </iframe>
+    </div>
+
+    <!-- HTML copy of the resume (semantic, searchable) -->
+    <div class="resume-text">
+      <h3>K Mohammad Sameer Sohail K</h3>
+      <p class="small-muted">
+        GitHub: <a href="https://github.com/sameer407396" target="_blank">sameer407396</a> |
+        LinkedIn: <a href="https://www.linkedin.com/in/mohammad-sameer-sohail-64b859332" target="_blank">mohammad-sameer-sohail</a> |
+        Email: <a href="mailto:sameerskadurla2510@gmail.com">sameerskadurla2510@gmail.com</a> |
+        Phone: <a href="tel:+916303407833">+91-6303407833</a>
+      </p>
+
+      <div class="resume-grid">
+        <div>
+          <h4>Professional Profile</h4>
+          <p>Final-year B.Tech CSE (AI & ML) student with experience in Python programming, web development, and cloud fundamentals. Skilled in problem-solving, debugging, and analytical thinking, with practical experience in software projects and collaborative development. Seeking opportunities to apply technical skills in software development or data-driven projects.</p>
+        </div>
+
+        <div>
+          <h4>Education</h4>
+          <ul>
+            <li><b>Srinivasa Ramanujan Institute of Technology</b> — B.Tech, CSE (AI & ML), CGPA: <b>8.55</b> (2022–2026)</li>
+            <li><b>Narayana Junior College</b> — Intermediate (MPC), CGPA: <b>9.14</b> (2020–2022)</li>
+            <li><b>Sri Krishna E.M. High School</b> — SSC, GPA: <b>10.0</b> (2019–2020)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Skills</h4>
+          <ul>
+            <li><b>Programming:</b> Python, Java (Basic), SQL</li>
+            <li><b>Web & Cloud:</b> HTML, CSS, JavaScript, REST APIs, basic cloud concepts</li>
+            <li><b>Tools & Methodologies:</b> Git, Debugging, Documentation, Agile practices</li>
+            <li><b>Soft Skills:</b> Communication, Analytical Thinking, Teamwork</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Internship</h4>
+          <p><b>Web Developer Intern (Virtual)</b><br>
+          Developed responsive web pages using HTML, CSS, JavaScript, and integrated APIs. Gained experience in debugging, version control, and collaborative development. Focused on improving interface usability and dynamic content.</p>
+        </div>
+
+        <div>
+          <h4>Projects</h4>
+          <ul>
+            <li><b>StrengthAnalyzer – Password Strength Checker & Generator</b> — Developed a Python-based password strength analyzer and generator to understand core security concepts such as entropy and pattern-based weaknesses. The application evaluates passwords using length, character diversity, and common patterns, while providing clear feedback on improvement areas. Implemented a password generator offering multiple strength levels to promote secure password practices. Built a simple and interactive web interface using Streamlit for real-time analysis. Improved code reliability and structure through modular design and testing with Pytest.</li>
+            <li><b>Rate Limiter Simulator (Sliding Window Algorithm)</b> — Developed a Python-based rate limiter using a sliding window mechanism to restrict excessive requests within a fixed time interval. Implemented efficient timestamp management with a deque for fast insertion and cleanup of expired entries. Built a simulator to mimic real-world request patterns and display allowed versus blocked requests. The project provides a clear visualization of how rate limiting works in backend systems. Strengthened core understanding of API security, traffic control, and time-based algorithms using Python’s standard library.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Certifications</h4>
+          <ul>
+            <li>ServiceNow Certified System Administrator (CSA)</li>
+            <li>ServiceNow Certified Application Developer (CAD)</li>
+            <li>The Complete Python Bootcamp: From Zero to Hero in Python – Udemy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
